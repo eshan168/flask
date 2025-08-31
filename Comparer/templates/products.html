@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+  
+    <div id="search">
+        <form action="#" method="post">
+            <input type="text" name="searchbox2" onclick="loading()">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    {% for product in products %}
+        <p>{{ product["product"] }}</p><br>
+        <p>{{ product["price"] }}</p><br>
+        <p>{{ product["seller"] }}</p><br><br><br>
+    {% endfor %}
+
+
+{% endblock %}
