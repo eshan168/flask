@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ url_for('static', filename='loading.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<h1 id="load">Loading...</h1>
+
+<script>
+    window.location.href = "/search"
+</script>
+
+{% endblock %}
