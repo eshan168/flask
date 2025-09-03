@@ -1,0 +1,9 @@
+#load {
+    display: block;
+    animation: load 4s infinite;
+}
+
+@keyframes load{
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(100px); }
+}
